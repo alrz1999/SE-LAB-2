@@ -6,8 +6,14 @@ public class Rectangle {
         this.height = height;
         this.width = width;
     }
-
-    public int Area_Rectangle() {
-        return height * width;
+    public int getHeight(){
+      return this.height;
     }
+    public int getWidth(){
+        return this.width;
+    }
+    public int AreaRec() {
+        return getHeight() * getWidth();
+    }
+
 }
