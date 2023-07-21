@@ -30,7 +30,7 @@ public class RectangleTest {
         var Rec4= new Rectangle(-2,5);
         assertThrows(IllegalAccessException.class,
                 () ->{
-            Rec4.Area_Rectangle(-2,5);
+            Rec4.Area_Rectangle();
                 });
 
     }
@@ -41,7 +41,7 @@ public class RectangleTest {
         var Rec5= new Rectangle(-7,-3);
         assertThrows(IllegalAccessException.class,
                 () ->{
-                    Rec5.Area_Rectangle(-7,-3);
+                    Rec5.Area_Rectangle();
                 });
 
     }
@@ -51,7 +51,7 @@ public class RectangleTest {
         var Rec6= new Rectangle(1,-3);
         assertThrows(IllegalAccessException.class,
                 () ->{
-                    Rec6.Area_Rectangle(1,-3);
+                    Rec6.Area_Rectangle();
                 });
 
     }
