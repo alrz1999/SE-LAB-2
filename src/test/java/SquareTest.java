@@ -38,17 +38,25 @@ public class SquareTest {
     }
 
     @Test
-    void get_length_square_test1() {
+    void getLength_square_test1() {
         var square = new Square(0);
         assertEquals(0, square.getLength());
     }
 
     @Test
-    void set_length_square_test1() {
+    void setLength_square_test1() {
         var square = new Square(0);
         assertEquals(0, square.getLength());
 
         square.setLength(10);
         assertEquals(10, square.getLength());
+    }
+
+    @Test
+    void setLength_square_test2() {
+        var square = new Square(1);
+        assertEquals(1, square.getLength());
+
+        assertThrows(IllegalArgumentException.class, () -> square.setLength(-1));
     }
 }
