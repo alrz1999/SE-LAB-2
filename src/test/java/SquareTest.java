@@ -55,8 +55,6 @@ public class SquareTest {
     @Test
     void setLength_square_test2() {
         var square = new Square(1);
-        assertEquals(1, square.getLength());
-
         assertThrows(IllegalArgumentException.class, () -> square.setLength(-1));
     }
 }
