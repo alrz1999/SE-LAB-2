@@ -19,6 +19,11 @@
 ## پرسش‌ها
 
 ### 1- هر یک از پنج اصل SOLID را در دو الی سه خط توضیح دهید.
+:Single-responsiblity principle - S اصل مسئولیت واحد یا اصل تک مسئولتی بودن کلاس ها###
+Open-closed principle - O اصل باز/بسته بودن کلاس ها###
+Liskov substitution principle - L اصل جانشینی لیسکوف###
+Interface segregation principle - I اصل تفکیک اینترفیس###
+Dependency Inversion Principle - D اصل انطباق پذیری###
  
 
 ### 2- اصول SOLID در کدام یک از گام‌های اصلی ایجاد نرم‌افزار (تحلیل نیازمندی‌ها، طراحی، پیاده‌سازی، تست و استقرار) استفاده می‌شوند؟ توضیح دهید.
