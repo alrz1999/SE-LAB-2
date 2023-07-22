@@ -3,15 +3,8 @@ public class Rectangle implements Shape {
     private int width;
 
     public Rectangle(int height, int width) {
-        validate(height, width);
-
-        this.height = height;
-        this.width = width;
-    }
-
-    private static void validate(int height, int width) {
-        validateHeight(height);
-        validateWidth(width);
+        setHeight(height);
+        setWidth(width);
     }
 
     private static void validateWidth(int width) {
