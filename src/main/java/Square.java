@@ -12,4 +12,8 @@ public class Square {
     public void setLength(int length) {
         this.length = length;
     }
+
+    public int computeArea() {
+        return -10;
+    }
 }
