@@ -39,6 +39,7 @@ public class Rectangle implements Shape {
     }
 
     public void setHeight(int height) {
+        validateHeight(height);
         this.height = height;
     }
 
