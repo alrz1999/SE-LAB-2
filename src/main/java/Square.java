@@ -1,4 +1,4 @@
-public class Square {
+public class Square implements Shape {
     private int length;
 
     public Square(int length) {
@@ -21,7 +21,9 @@ public class Square {
         this.length = length;
     }
 
+
+    @Override
     public int computeArea() {
-        return length * length;
+        return getLength() * getLength();
     }
 }
