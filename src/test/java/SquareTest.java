@@ -36,4 +36,19 @@ public class SquareTest {
     void negative_length_square_test2() {
         assertThrows(IllegalArgumentException.class, () -> new Square(-100));
     }
+
+    @Test
+    void get_length_square_test1() {
+        var square = new Square(0);
+        assertEquals(0, square.getLength());
+    }
+
+    @Test
+    void set_length_square_test1() {
+        var square = new Square(0);
+        assertEquals(0, square.getLength());
+
+        square.setLength(10);
+        assertEquals(10, square.getLength());
+    }
 }
