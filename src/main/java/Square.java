@@ -14,6 +14,6 @@ public class Square {
     }
 
     public int computeArea() {
-        return -10;
+        return length * length;
     }
 }
