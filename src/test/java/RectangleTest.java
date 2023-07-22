@@ -59,6 +59,13 @@ public class RectangleTest {
     }
 
     @Test
+    void setHeight_test2() {
+        var rectangle = new Rectangle(3, 4);
+
+        assertThrows(IllegalArgumentException.class, () -> rectangle.setHeight(-1));
+    }
+
+    @Test
     void setWidth_test1() {
         var rectangle = new Rectangle(3, 4);
         assertEquals(4, rectangle.getWidth());
@@ -66,5 +73,12 @@ public class RectangleTest {
         rectangle.setWidth(5);
         assertEquals(5, rectangle.getWidth());
         assertEquals(15, rectangle.computeArea());
+    }
+
+    @Test
+    void setWidth_test2() {
+        var rectangle = new Rectangle(3, 4);
+
+        assertThrows(IllegalArgumentException.class, () -> rectangle.setWidth(-10));
     }
 }

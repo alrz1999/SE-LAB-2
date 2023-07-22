@@ -2,9 +2,7 @@ public class Square implements Shape {
     private int length;
 
     public Square(int length) {
-        validateLength(length);
-
-        this.length = length;
+        setLength(length);
     }
 
     private static void validateLength(int length) {
@@ -18,9 +16,9 @@ public class Square implements Shape {
     }
 
     public void setLength(int length) {
+        validateLength(length);
         this.length = length;
     }
-
 
     @Override
     public int computeArea() {
