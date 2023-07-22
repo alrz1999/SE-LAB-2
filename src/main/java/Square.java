@@ -18,6 +18,7 @@ public class Square implements Shape {
     }
 
     public void setLength(int length) {
+        validateLength(length);
         this.length = length;
     }
 
