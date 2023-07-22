@@ -35,6 +35,7 @@ public class Rectangle implements Shape {
     }
 
     public void setWidth(int width) {
+        validateWidth(width);
         this.width = width;
     }
 
